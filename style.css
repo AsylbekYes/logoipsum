@@ -1,3 +1,7 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
 :root {
     --dark: #19191B;
     --gray: #696871;
@@ -377,3 +381,4 @@ img {
   max-width: 100%;
   height: auto;
 }
+
