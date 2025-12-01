@@ -371,4 +371,9 @@ main {
 
 .subscription__plan.active .subscription__plan-button {
     background: #9F3919;
+
+}
+img {
+  max-width: 100%;
+  height: auto;
 }
