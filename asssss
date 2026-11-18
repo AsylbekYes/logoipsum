@@ -1,1 +1,108 @@
 
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Catch the Ball</title>
+
+<style>
+body {
+    background: #101827;
+    color: white;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: #00e5ff;
+}
+
+.game {
+    width: 350px;
+    height: 450px;
+    margin: 30px auto;
+    background: #243b55;
+    border: 3px solid white;
+    border-radius: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.ball {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.ball input {
+    display: none;
+}
+
+.ball span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.ball input:checked + span {
+    display: none;
+}
+
+.one {
+    left: 40px;
+    animation: fall 5s linear infinite;
+}
+
+.two {
+    left: 150px;
+    animation: fall 4s linear infinite;
+    animation-delay: 1s;
+}
+
+.three {
+    left: 260px;
+    animation: fall 6s linear infinite;
+    animation-delay: 2s;
+}
+
+.one span { background: #ff4757; }
+.two span { background: #ffd700; }
+.three span { background: #2ed573; }
+
+@keyframes fall {
+    from { top: -50px; }
+    to { top: 450px; }
+}
+</style>
+</head>
+
+<body>
+
+<h1>🎮 CATCH THE BALL</h1>
+<p>Нажми на шарик, чтобы поймать его!</p>
+
+<div class="game">
+
+<label class="ball one">
+<input type="checkbox">
+<span></span>
+</label>
+
+<label class="ball two">
+<input type="checkbox">
+<span></span>
+</label>
+
+<label class="ball three">
+<input type="checkbox">
+<span></span>
+</label>
+
+</div>
+
+</body>
+</html>
